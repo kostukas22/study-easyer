@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    
+    
+   <meta charset='utf-8'>
+   <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+   <style>
+   html, body { 
+    height: 100%; 
+    margin: 0;    
+    padding: 0;  
+   }
+   </style>
+   
+   <title>Homework music helper</title>
+    
+<canvas>id ="canvas" </canvas>
+
+
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+    <body style="background-color:rgb(109, 22, 22);"></body>
+    
+    <script src="main.js" defer></script>
+
+    <!-- Cursor confetti -->
+    <script type="module">
+        import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+        new fairyDustCursor();
+      </script>
+
+</head>
+<body>
+    <H1>"Who doesnt love music?"</H1>
+    <header> music playerer </header>
+
+
+    
+
+
+    <audio id="myAudio">
+        <source src="dumb ep thing 12-08pm.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    
+
+
+      <button id="playpause" onclick="startnstop()" type="button">Play Audio</button>
+      <style>
+       #playpause{
+        position: absolute;
+        top: 100px;
+        left: numberr + 'px';
+       }
+
+
+        
+
+
+      </style>
+      
+      <script>
+        var x = document.getElementById("myAudio");
+      
+        function playAudio() {
+          x.play();
+        }
+      
+        function pauseAudio() {
+          x.pause();
+        }
+      
+        function startnstop() {
+          playAudio();
+          setTimeout(pauseAudio, 1000);
+          console.log (numberr);
+        }
+      </script>
+
+      <script src="https://randojs.com/1.0.0.js"></script>
+      <script>
+          function showRandomNumber(){
+              document.getElementById("myNumber").innerHTML = rando(0, window.screen.width);
+          }
+      </script>
+
+</body>
+</html>
